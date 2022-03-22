@@ -69,3 +69,14 @@ a {
     height: calc(200% - 0px); 
     display: block;
 }
+
+@media screen and (max-width: 400px) {
+    header nav {
+        height: 131px;
+    }
+    header ul {
+        display: block;
+    }
+    header li {
+        display: inline;
+    }}
