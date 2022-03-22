@@ -58,3 +58,14 @@ a {
     position: relative;
     cursor: pointer;
 }
+
+#video {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    left: -500px;
+    bottom: 0px;
+    height: -webkit-calc(200% - 0px);
+    height: calc(200% - 0px); 
+    display: block;
+}
