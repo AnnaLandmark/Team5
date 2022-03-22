@@ -58,3 +58,14 @@ a {
     position: relative;
     cursor: pointer;
 }
+
+@media screen and (max-width: 400px) {
+    header nav {
+        height: 131px;
+    }
+    header ul {
+        display: block;
+    }
+    header li {
+        display: inline;
+    }}
