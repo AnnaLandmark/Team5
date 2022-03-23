@@ -11,14 +11,6 @@ body {
     background-color: #050505;
 }
 
-p, li, a {
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
 .puffin-font {
     font-family: puffin-arcade-nerf, sans-serif;
     font-weight: 500;
@@ -28,10 +20,30 @@ p, li, a {
     font-size: 40px;
 }
 
+p, li, a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+/*----------------Header---------------*/
+.header {
+    position: fixed;
+    background-color: black;
+    border: 3px solid #73AD21;
+    height: 120px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;     /* index 100 */
+}
+
+/* Nav images */
 .logo {
     position: relative;
     height: 100px;
-    z-index: 100;
+    z-index: 100;    /* index 100 */
 }
 
 .nav-icon {
@@ -42,34 +54,26 @@ p, li, a {
     height: 40px;
 }
 
-.big-logo {
-    width: 350px;
+.nav-spacing {
+    padding: 0 0 0 50px;
 }
 
-.header1 {
-    position: fixed;
-    background-color: black;
-    border: 3px solid #73AD21;
-
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 90;
-}
-
-/*Nav position*/
+/* Nav bar */
 nav{
     display: flex;
-    padding: 2% 6%;
+    padding: 10px 6%;
     justify-content: space-between;
     align-items: center;
     
 }
 
+
+
 /* Nav ul position */
 .nav-links{
     flex: 1;
     text-align: right;
+    
 }
 /* Styling of individual links */
 .nav-links ul li{
@@ -88,7 +92,7 @@ nav{
 }
 
 
-/* Frontpage title */
+/*---------------Frontpage---------------*/
 .frontpage{
     width: 90%;
     color: #fff;
@@ -97,57 +101,116 @@ nav{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    text-shadow: -1px 0 black, 0 -1px black;
-    z-index: 80;
+    text-shadow: -3px 0 black, 0 -1px black;
+    z-index: 80;      /* index 80 */
 }
 
-.frontpage .neolimerh2{
-    font-size: 60px;
+.frontpage-h2 {
+    font-size: 45px;
+    padding: 120px 0 0 0;
 }
 
-.check-it-out {
+.neolimerh2{
+    color: white;
+    font-size: 120px;
+    padding: 5px;
+}
+
+/* Frontpage background video */
+#video {
+    position: relative;
+    top: 80px;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 100%;
+    display: block;
+    z-index: 1;       /* index 1 */
+}
+
+/* Frontpage "button" */
+.frontpage-button {
+    position: relative;
     display: inline-block;
     color: white;
     border: 1px solid #7FFF00;
     padding: 12px 25px;
     background-color: black;
-    position: relative;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.check-it-out:hover{
+.frontpage-button:hover{
     background-color: #090909;
     transition: 0.5s;
 }
 
-#video {
-    position: relative;
-    top: 0;
-    right: 0px;
-    left: 0px;
-    bottom: 0px;
-    max-width: 100%;
-    display: block;
+.div-button { /* Check it out button */
+    padding: 50px;
 }
 
-/* Product section */
+/*----------------Products----------------*/
 .products {
     position: relative;
     border: 3px solid #73AD21;
-    
+    z-index: 70;    /* index 70 */
+    background-color: #050505;
 }
 
-.div-products {
-    
+.product-heading {
+    text-align: center;
+    padding: 50px;
 }
 
-@media screen and (max-width: 400px) {
-    header nav {
-        height: 131px;
+.big-logo {
+    width: 300px;
+}
+
+@media screen and (max-width: 1600px) {
+    .header {
+        background-color: red;
     }
-    header ul {
-        display: block;
+}
+
+@media screen and (max-width: 1280px) {
+    .header {
+        background-color: red;
+        height: 100px;
     }
-    header li {
-        display: inline;
-    }}
+
+    .sign-in {
+        display: none;
+    }
+
+    .user-image {
+        height: 30px;
+        padding: 0 0 0 10px;
+    }
+
+    .logo {
+        height: 80px;
+    }
+
+    .nav-links ul li a{
+        font-size: 18px;
+    }
+
+    .frontpage-h2 {
+        font-size: 35px;
+        padding: 100px 0 0 0;
+    }
+
+}
+
+@media screen and (max-width: 414px) {
+    .header {
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header {
+        background-color: red;
+    }
+}
+
