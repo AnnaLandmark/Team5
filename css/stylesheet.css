@@ -126,6 +126,7 @@ nav{
     max-width: 100%;
     display: block;
     z-index: 1;       /* index 1 */
+    filter: brightness(65%);
 }
 
 /* Frontpage "button" */
