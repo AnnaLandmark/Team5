@@ -19,10 +19,6 @@ p, li, a {
     text-decoration: none;
 }
 
-a {
-    font-size: 25px;
-}
-
 .puffin-font {
     font-family: puffin-arcade-nerf, sans-serif;
     font-weight: 500;
@@ -34,19 +30,75 @@ a {
 
 .logo {
     position: relative;
-    height: 75px;
-    z-index: 55;
+    height: 100px;
+    z-index: 100;
 }
 
-.brand-name {
-    position: relative;
-    font-size: 35px;
-    padding: 2% 1%;
-    z-index: 50;
+.nav-icon {
+    height: 25px;
+}
+
+.user-image {
+    height: 40px;
 }
 
 .big-logo {
     width: 350px;
+}
+
+.header1 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    max-width
+    border: 3px solid #73AD21;
+}
+
+/*Nagivation*/
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav position */
+.nav-links{
+    flex: 1;
+    text-align: right;
+    z-index: 50;
+}
+/* Styling of individual links */
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+/* Styling of link text */
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+/* Frontpage */
+.frontpage{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    z-index: 40;
+    text-shadow: -1px 0 black, 0 -1px black;
+}
+
+.frontpage .neolimerh2{
+    font-size: 60px;
 }
 
 .check-it-out {
@@ -59,15 +111,25 @@ a {
     cursor: pointer;
 }
 
+.check-it-out:hover{
+    background-color: #090909;
+    transition: 0.5s;
+}
+
 #video {
-    position: absolute;
+    position: relative;
     top: 0;
     right: 0px;
-    left: -500px;
+    left: 0px;
     bottom: 0px;
-    height: -webkit-calc(200% - 0px);
-    height: calc(200% - 0px); 
+    max-width: 100%;
     display: block;
+}
+
+/* Product section */
+.products {
+    position: relative;
+    z-index: 30;
 }
 
 @media screen and (max-width: 400px) {
