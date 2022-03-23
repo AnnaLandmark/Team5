@@ -48,25 +48,28 @@ p, li, a {
 
 .header1 {
     position: fixed;
-    bottom: 0;
-    right: 0;
-    max-width
+    background-color: black;
     border: 3px solid #73AD21;
+
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 90;
 }
 
-/*Nagivation*/
+/*Nav position*/
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    
 }
 
-/* Nav position */
+/* Nav ul position */
 .nav-links{
     flex: 1;
     text-align: right;
-    z-index: 50;
 }
 /* Styling of individual links */
 .nav-links ul li{
@@ -84,7 +87,8 @@ nav{
     letter-spacing: 3px;
 }
 
-/* Frontpage */
+
+/* Frontpage title */
 .frontpage{
     width: 90%;
     color: #fff;
@@ -93,8 +97,8 @@ nav{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-    z-index: 40;
     text-shadow: -1px 0 black, 0 -1px black;
+    z-index: 80;
 }
 
 .frontpage .neolimerh2{
@@ -129,7 +133,12 @@ nav{
 /* Product section */
 .products {
     position: relative;
-    z-index: 30;
+    border: 3px solid #73AD21;
+    
+}
+
+.div-products {
+    
 }
 
 @media screen and (max-width: 400px) {
