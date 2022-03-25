@@ -168,6 +168,7 @@ nav{
 
 .big-logo {
     width: 300px;
+    display: block;
 }
 
 .products-div {
