@@ -170,6 +170,11 @@ nav{
     width: 300px;
 }
 
+.products-div {
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 1600px) {
     .header {
         background-color: red;
