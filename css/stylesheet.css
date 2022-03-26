@@ -176,6 +176,46 @@ nav{
     align-items: center;
 }
 
+.grid_1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+.grid_2cont{
+display: grid;
+grid-gap:10px;
+padding: 10px;
+
+}
+
+.item_1{
+    grid-column: 2 ;
+    grid-row: 1;
+
+}
+.item_2{
+    grid-column: 1 ;
+    grid-row: 2;
+
+}.item_3{
+    grid-column: 2 ;
+    grid-row: 2;
+
+}.item_4{
+    grid-column: 3 ;
+    grid-row: 2;
+
+}
 @media screen and (max-width: 1600px) {
     .header {
         background-color: red;
@@ -224,3 +264,6 @@ nav{
     }
 }
 
+footer {
+    background-color: #73AD21;
+}
