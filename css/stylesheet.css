@@ -185,94 +185,12 @@ nav{
 }
 
 
-<<<<<<< HEAD
 
 
 .page {
     display: none;
     }
 
-=======
-.products-text {
-    padding: 20px;
-}
-
-.products-text p {
-    padding: 0 0px 0 60px;
-}
-
-.products-list {
-    position: relative;
-    align-items: center;
-    padding: 30px 50px 100px 60px;
-}
-
-.products-list li {
-    text-shadow: -1px 0 #7FFF00, 0 1px #7FFF00, 1px 0 #7FFF00, 0 -1px #7FFF00;
-    padding: 10px;
-}
-
-/*---------------Animation---------------*/
-.animation {
-    position: relative;
-    border: 3px solid #73AD21;
-    z-index: 65;    /* index 65 */
-    background-color: #050505;
-}
-
-.animation-heading {
-    text-align: center;
-    margin: 130px 0px 70px 0px;
-}
-
-.animation-text {
-    text-align: center;
-}
-
-.animation-banner {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 60px 0 10% 0;
-}
-
-/*--------------Subscription------------*/
-
-.subscription {
-    position: relative;
-    z-index: 60;    /* index 60 */
-    background-color: #87CC42;
-    text-align: center;
-}
-
-.subscribe-button {
-    position: relative;
-    display: inline-block;
-    color: white;
-    border: 1px solid #7FFF00;
-    padding: 12px 25px;
-    background-color: black;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.subscribe-text {
-    color: black;
-    font-weight: bold;
-    padding: 40px 0 0 0;
-}
-
-.subscribe-button:hover{
-    background-color: #090909;
-    transition: 0.5s;
-}
-
-.subscribe-buttondiv { /* Check it out button */
-    padding: 30px;
-}
-
-/*-----------------Templates----------------*/
->>>>>>> 925460f645d8c09f9705cad1aa15194e80b2b26e
 .grid_1 {
     display: flex;
     flex-direction: column;
@@ -307,11 +225,9 @@ padding: 10px;
 }
 
 
-<<<<<<< HEAD
 
-=======
 /*--------------Media-------------*/
->>>>>>> 925460f645d8c09f9705cad1aa15194e80b2b26e
+
 @media screen and (max-width: 1600px) {
     .header {
         background-color: red;
