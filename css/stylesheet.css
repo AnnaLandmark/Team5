@@ -198,6 +198,7 @@ nav{
 }
 
 
+
 .grid_2cont{
 display: grid;
 grid-gap:10px;
@@ -276,6 +277,8 @@ padding: 10px;
     }
 }
 
-footer {
-    background-color: #73AD21;
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
